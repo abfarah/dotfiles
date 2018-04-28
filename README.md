@@ -38,7 +38,7 @@ To change primary shell to zsh run
 `chsh -s $(which zsh)`
 
 #### ScreenShot of zsh setup
-![alt text](https://raw.githubuserconten/Abdullahif14688/dotfiles/master/Zsh_Shell_Screenshot.png "Zsh Setup")
+![alt text](https://github.com/Abdullahif14688/dotfiles/blob/master/Zsh_Shell_Screenshot.png "Zsh Setup")
 
 To run enter `. ~/dotfiles/zshconfig.sh` on your console 
 
