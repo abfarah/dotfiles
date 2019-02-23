@@ -13,7 +13,7 @@ or install to install on mac using [homebrew](https://brew.sh/)
 
 ## Vundle installation and configuration
 1. Set up Vundle
-   `a.	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+   `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 2. Configure Plugins - copy code below into `~.vimrc`
 ```vim
    set nocompatible              " be iMproved, required
