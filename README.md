@@ -5,10 +5,10 @@ A set of vim, zsh, git, and tmux configuration files.
 My vim config uses Vundle
 
 ### Requirements
-1. To install vim on arch run
-`sudo pacman -S vim`<br />
-or install to install on mac using [homebrew](https://brew.sh/)
-`brew install vim`<br />
+1. To install vim on arch run<br />
+   `sudo pacman -S vim`<br />
+To install on mac using [homebrew](https://brew.sh/) <br />
+   `brew install vim`<br />
 
 ## Vundle installation and configuration
 1. Set up Vundle<br />
