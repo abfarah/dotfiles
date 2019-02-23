@@ -61,8 +61,8 @@ or install to install on mac using [homebrew](https://brew.sh/)
    " Put your non-Plugin stuff after this line
    ```
 3. Install Plugins
-   Launch `vim` and run `:PluginInstall`
-   To install from command line run: `vim +PluginInstall +qall` 
+  a. Launch `vim` and run `:PluginInstall`
+  b. To install from command line run: `vim +PluginInstall +qall` 
 
 ### Plugins I use for vim
 1. Ctrl-p
