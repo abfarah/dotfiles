@@ -5,14 +5,13 @@ A set of vim, zsh, git, and tmux configuration files.
 My vim config uses Vundle
 
 ### Requirements
-1. vim
-To install vim on arch run
-`sudo pacman -S vim`
+1. To install vim on arch run
+`sudo pacman -S vim`<br />
 or install to install on mac using [homebrew](https://brew.sh/)
-`brew install vim`
+`brew install vim`<br />
 
 ## Vundle installation and configuration
-1. Set up Vundle
+1. Set up Vundle<br />
    `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 2. Configure Plugins - copy code below into `~.vimrc`
 ```vim
@@ -60,9 +59,9 @@ or install to install on mac using [homebrew](https://brew.sh/)
    " see :h vundle for more details or wiki for FAQ
    " Put your non-Plugin stuff after this line
    ```
-3. Install Plugins
-  a. Launch `vim` and run `:PluginInstall`
-  b. To install from command line run: `vim +PluginInstall +qall` 
+3. Install Plugins<br />
+  a. Launch `vim` and run `:PluginInstall`<br />
+  b. To install from command line run: `vim +PluginInstall +qall`<br />
 
 ### Plugins I use for vim
 1. Ctrl-p
