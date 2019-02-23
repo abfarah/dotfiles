@@ -3,7 +3,11 @@ A set of vim, zsh, git, and tmux configuration files.
 
 # Vim configuration  
 My vim config uses Vundle
-To config vim like mine run this vimConfig.sh on your mac or linux machine
+
+## Plugins I use for vim
+1. Ctrl-p
+2. NERDTree
+3. AG for Vim
 
 ### Requirements 
 1. vim
