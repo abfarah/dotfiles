@@ -23,6 +23,13 @@ alias l="ls -lagh"
 alias jc="javac"
 alias j="java"
 
+# Vim alias to open all files in directory and sub directory into buffer
+alias vimb="vim ./**/*(D-)"
+
+# Git aliases
+alias gpsh="git push origin master"
+alias gpll="git pull origin master"
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
