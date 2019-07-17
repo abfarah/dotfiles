@@ -1,4 +1,4 @@
-archey
+archey -o
 
 POWERLEVEL9K_MODE='awesome-patched'
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
