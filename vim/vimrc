@@ -55,9 +55,25 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 
-" basic setup
+"Mapping arrow keys to echo do not use in all modes
+nnoremap <Up> :echo "Dont't use this!"<CR>
+vnoremap <Up> :<C-u>echo "Dont't use this!"<CR>
+inoremap <Up> <C-o>:echo "Dont't use this!"<CR>
 
-" We don't want vi
+nnoremap <Down> :echo "Dont't use this!"<CR>
+vnoremap <Down> :<C-u>echo "Dont't use this!"<CR>
+inoremap <Down> <C-o>:echo "Dont't use this!"<CR>
+
+nnoremap <Left> :echo "Dont't use this!"<CR>
+vnoremap <Left> :<C-u>echo "Dont't use this!"<CR>
+inoremap <Left> <C-o>:echo "Dont't use this!"<CR>
+
+nnoremap <Right> :echo "Dont't use this!"<CR>
+vnoremap <Right> :<C-u>echo "Dont't use this!"<CR>
+inoremap <Right> <C-o>:echo "Dont't use this!"<CR>
+
+
+" Turning of compatiability with older VI
 set nocompatible
 
 " finding files
@@ -77,6 +93,9 @@ set ai
 " Display all matching files when we tab complete
 set wildmenu
 
+" Theme solaraized for airline powerbar
 let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'
+
+" Using Molokai color scheme
 colorscheme Molokai
