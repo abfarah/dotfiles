@@ -99,3 +99,7 @@ let g:airline_solarized_bg='dark'
 
 " Using Molokai color scheme
 colorscheme Molokai
+
+" show hidden files when in NerdTree
+let NERDTreeShowHidden=1
+
