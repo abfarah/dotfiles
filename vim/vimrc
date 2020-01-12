@@ -103,3 +103,22 @@ colorscheme Molokai
 " show hidden files when in NerdTree
 let NERDTreeShowHidden=1
 
+" tabs count as 4 spaces visually
+set tabstop=4
+
+" remove 4 spaces when tab is erased
+set softtabstop=4
+
+" turns all tabs into spaces
+set expandtab
+
+" Show the last entered command
+set showcmd
+
+" Highlight the current line
+set cursorline
+
+" Highlight matching parenthisis
+set showmatch
+
+
