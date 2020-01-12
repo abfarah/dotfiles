@@ -22,7 +22,7 @@ alias tree="tree -a"
 alias vprof="vim ~/.vimrc"
 alias v="vim"
 alias tprof="vim ~/.tmux.conf"
-alias l="ls -lagh"
+alias ll="ls -lagh"
 
 # Java Compiling and running
 alias jc="javac"
@@ -138,3 +138,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+HISTCONTROL=ignoreboth
