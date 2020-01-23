@@ -7,6 +7,7 @@ call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
+" highlight searched files and turn of search case sensitivity
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
@@ -121,8 +122,10 @@ set cursorline
 " Highlight matching parenthisis
 set showmatch
 
-" highlight searched files and turn of search case sensitivity
+" 	'ic' 'ignorecase'	ignore upper/lower case when searching
+"	'is' 'incsearch'	show partial matches for a search phrase
+"	'hls' 'hlsearch'	highlight all matching phrases
 " to disable highlights type :nohlsearch 
 " to disable case sensitivity in search type :set noic or use \c after search
 " like /test\c
-set hls is
+set hls is ic
