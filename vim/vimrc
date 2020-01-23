@@ -121,4 +121,8 @@ set cursorline
 " Highlight matching parenthisis
 set showmatch
 
-
+" highlight searched files and turn of search case sensitivity
+" to disable highlights type :nohlsearch 
+" to disable case sensitivity in search type :set noic or use \c after search
+" like /test\c
+set hls is
