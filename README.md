@@ -117,4 +117,4 @@ To install plugins open vim and run `:PluginInstall`<br />
 3. AG for Vim
 
 #### Screenshot of vim setup
-![alt text](https://raw.githubusercontent.com/abfarah/dotfiles/master/Vim_ScreenShot.png "Vim Setup")
+![alt text](https://raw.githubusercontent.com/abfarah/dotfiles/master/Vim_Setup.png "Vim Setup")
