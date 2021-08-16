@@ -55,7 +55,6 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-
 "Mapping arrow keys to echo do not use in all modes
 nnoremap <Up> :echo "Dont't use this!"<CR>
 vnoremap <Up> :<C-u>echo "Dont't use this!"<CR>
@@ -101,7 +100,7 @@ let g:airline_powerline_fonts = 1
 set t_Co=256
 
 " Using Molokai color scheme
-colorscheme Molokai
+colorscheme gruvbox
 
 " show hidden files when in NerdTree
 let NERDTreeShowHidden=1
@@ -127,7 +126,7 @@ set showmatch
 " 	'ic' 'ignorecase'	ignore upper/lower case when searching
 "	'is' 'incsearch'	show partial matches for a search phrase
 "	'hls' 'hlsearch'	highlight all matching phrases
-" to disable highlights type :nohlsearch 
+" to disable highlights type :nohlsearch
 " to disable case sensitivity in search type :set noic or use \c after search
 " like /test\c
 set hls is ic

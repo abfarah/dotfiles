@@ -1,8 +1,3 @@
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
-
-
 archey -o
 
 POWERLEVEL9K_MODE='awesome-patched'
@@ -23,6 +18,14 @@ alias vprof="vim ~/.vimrc"
 alias v="vim"
 alias tprof="vim ~/.tmux.conf"
 alias ll="ls -lagh"
+alias @wp="~/worksaces"
+
+# ssh Aliases cse labs
+alias apollo="ssh farah126@apollo.cselabs.umn.edu"
+alias atlas="ssh farah126@atlas.cselabs.umn.edu"
+alias kh02="ssh farah126@csel-kh1250-02.cselabs.umn.edu"
+alias kh26="ssh farah126@csel-kh1250-26.cselabs.umn.edu"
+alias cs2041="cd ~/Documents/Academic\ Files/University\ Of\ Minnesota/Spring\ 2021/CSCI\ 2041/Labs"
 
 # Java Compiling and running
 alias jc="javac"
@@ -37,14 +40,20 @@ alias gpll="git pull origin master"
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export GOPATH=$HOME/go
+# export PATH=$GOPATH/bin:$PATH
+# export GOROOT=/usr/local/Cellar/go
+# export GOBIN=$GOPATH/bin
+# export PATH=$PATH:$GOROOT:$GOPATH:$GOBIN
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/abfarah/.oh-my-zsh"
 
+export PATH="$PATH:/Users/abfarah/.dotnet/tools"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Set list of themes to pick from when loading at random
@@ -139,3 +148,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 HISTCONTROL=ignoreboth
+#export PATH="/usr/local/opt/bison/bin:$PATH"
+#export GPG_TTY=$(tty)
