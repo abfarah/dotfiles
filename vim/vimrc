@@ -130,3 +130,4 @@ set showmatch
 " to disable case sensitivity in search type :set noic or use \c after search
 " like /test\c
 set hls is ic
+
