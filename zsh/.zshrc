@@ -8,6 +8,12 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status os_icon load dir vcs)
 POWERLEVEL9K_SHOW_CHANGESET=true
 POWERLEVEL9K_CHANGESET_HASH_LENGTH=6
 
+eval "$(rbenv init -)"
+
+# Adding github ssh-keys
+ssh-add -q ~/.ssh/id_rsa
+ssh-add -q ~/.ssh/id_rsa_umn
+
 # Meta Aliases
 alias subl="open -a sublime\ text"
 alias prof="vim ~/.zshrc"
@@ -150,3 +156,4 @@ source $ZSH/oh-my-zsh.sh
 HISTCONTROL=ignoreboth
 #export PATH="/usr/local/opt/bison/bin:$PATH"
 #export GPG_TTY=$(tty)
+export GPG_TTY=$(tty)
