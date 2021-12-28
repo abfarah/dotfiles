@@ -24,7 +24,7 @@ alias vprof="vim ~/.vimrc"
 alias v="vim"
 alias tprof="vim ~/.tmux.conf"
 alias ll="ls -lagh"
-alias @wp="~/worksaces"
+alias @wp="~/workspaces"
 
 # ssh Aliases cse labs
 alias apollo="ssh farah126@apollo.cselabs.umn.edu"
@@ -157,3 +157,8 @@ HISTCONTROL=ignoreboth
 #export PATH="/usr/local/opt/bison/bin:$PATH"
 #export GPG_TTY=$(tty)
 export GPG_TTY=$(tty)
+
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
