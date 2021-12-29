@@ -7,7 +7,12 @@ My zsh config uses oh-my-zsh and built in commands namely for git and tmux
 ### Requirements:
 1. Homebrew, zsh, git, curl and wget<br />
 2. Install [homebrew](https://brew.sh/)<br />
-3. Install zsh, git, curl and wget: <br />
+   If you encounter the error below<br />
+   `Error: Failed to link all completions, docs and manpages: Permission denied`<br />
+   run the following command<br />
+   `sudo chown -R $USER /usr/local/*`<br />
+   The command tells your computer to allow your user to modify all files in the /usr/local/ directory<br />
+4. Install zsh, git, curl and wget: <br />
 `brew install zsh curl wget`<br />
 
 ### Iterm2 setup
