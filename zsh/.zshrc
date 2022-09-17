@@ -9,8 +9,7 @@ POWERLEVEL9K_SHOW_CHANGESET=true
 POWERLEVEL9K_CHANGESET_HASH_LENGTH=6
 
 # Adding github ssh-keys
-ssh-add -q ~/.ssh/id_rsa
-ssh-add -q ~/.ssh/id_rsa_umn
+ssh-add -q --apple-use-keychain ~/.ssh/id_ed25519
 
 # Meta Aliases
 alias subl="open -a sublime\ text"
@@ -51,9 +50,9 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export PATH=$PATH:$GOROOT:$GOPATH:$GOBIN
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/abfarah/.oh-my-zsh"
+export ZSH="/Users/abdulfarah/.oh-my-zsh"
 
-export PATH="$PATH:/Users/abfarah/.dotnet/tools"
+export PATH="$PATH:/Users/abdulfarah/.dotnet/tools"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
