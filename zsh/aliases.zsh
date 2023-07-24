@@ -12,12 +12,14 @@ alias @w="~/workspaces/workload"
 #alias @cp='~/workspaces/competativeProgramming'
 alias @af='~/workspaces/abfarah.github.io'
 alias @tmr='~/.tmux/resurrect/'
+alias @n='~/.config/nvim'
 
 ###############################################################################
 # Basic Aliases
 ###############################################################################
 
-alias v="vim"
+alias v="nvim"
+alias vim="v"
 alias e="emacs"
 alias t="touch"
 alias y="yarn"
