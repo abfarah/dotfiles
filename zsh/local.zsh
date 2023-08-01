@@ -4,6 +4,7 @@ export HOMEBREW_REPOSITORY="/opt/homebrew";
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin${PATH+:$PATH}";
 export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
 export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
+
 # Go Enviroment/Path
 # ZSH_DISABLE_COMPFIX=true
 #export GOPATH=$HOME/go
@@ -14,15 +15,13 @@ export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
 #export GOBIN=$GOPATH/bin
 #export PATH=$PATH:$GOROOT:$GOPATH:$GOBIN
 #export PATH=$PATH:$GOPATH:$GOBIN
+
 export TERM="screen-256color"
 
-# Uncomment the following line for a transparent terminal in arch
-#compton -cb
 #{ eval "$(ssh-agent -s)"; ssh-add -q ~/.ssh/id_rsa; ssh-add -q ~/.ssh/id_rsa_umn; } &>/dev/null
-neofetch
+eval "$(ssh-agent -s)"
 
-# Uncomment the following line to map caps lock to escape for arch linux
-#setxkbmap -option caps:escape &>/dev/null
+neofetch
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -66,9 +65,6 @@ bindkey '\e[B' history-search-forward
 # Uncomment the follwing line to match lowercase letters to uppercase letters for tab completion
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
-# Uncomment the follwing line to match lowercase letters to uppercase letters for tab completion and vice versa
-#zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
-
 # Uncomment the follwing line for case insensitive matching only when no case sensitive matches
 #zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
 
@@ -79,14 +75,21 @@ alias tmux="TERM=screen-256color tmux -2"
 command_exists () {
   command -v "$1" >/dev/null 2>&1
 }
-#export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-#export NVM_DIR="$HOME/.nvm"
-#[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-#[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion	
 
 #pyenv for managing python version
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
+# FZF setup 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # mac
+# Adds hidden files to FZF 
+#export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -l -g ""'
+
+export GPG_TTY=$(tty)

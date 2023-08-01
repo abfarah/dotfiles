@@ -1,4 +1,4 @@
-export EDITOR='vim'
+export EDITOR='nvim'
 
 ###############################################################################
 # Bookmarks
@@ -36,6 +36,7 @@ alias ff="find . -type f -name"
 alias prof="v ~/.zshrc"
 alias lprof="v ~/.local.zsh"
 alias aprof="v ~/.aliases.zsh"
+alias pprof="v ~/.plugins.zsh"
 alias reprof="c && source ~/.zshrc"
 
 alias tree="tree -a -I '.git*'"
