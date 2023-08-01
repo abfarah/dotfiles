@@ -73,7 +73,7 @@ sdk install java
    `java -version`<br />
 
 #### ScreenShot of zsh setup
-![alt text](https://raw.githubusercontent.com/abfarah/dotfiles/master/Zsh_Screenshot.png "Zsh Setup")
+![alt text](https://raw.githubusercontent.com/abfarah/dotfiles/main/Zsh_Screenshot.png "Zsh Setup")
 
 # Vim configuration 
 I moved over to NeoVim as my primary editor.
@@ -97,7 +97,7 @@ To install on mac using [homebrew](https://brew.sh/) <br />
 3. Close and reopen vim.
 
 #### Screenshot of vim setup
-![alt text](https://raw.githubusercontent.com/abfarah/dotfiles/master/Vim_Setup.png "Vim Setup")
+![alt text](https://raw.githubusercontent.com/abfarah/dotfiles/main/Vim_Setup.png "Vim Setup")
 
 # NeoVim configuration 
 My primary editor. Previously used Vim.
@@ -116,6 +116,6 @@ To install on mac using [homebrew](https://brew.sh/) <br />
 3. Keyboard shortcuts `<leader>km`
 
 #### Screenshots of nvim setup
-![alt text](https://raw.githubusercontent.com/abfarah/dotfiles/master/Nvim_Setup1 "Nvim Setup")
-![alt text](https://raw.githubusercontent.com/abfarah/dotfiles/master/Nvim_Setup2 "Nvim Setup")
+![alt text](https://raw.githubusercontent.com/abfarah/dotfiles/main/Nvim_Setup1.png "Nvim Setup")
+![alt text](https://raw.githubusercontent.com/abfarah/dotfiles/main/Nvim_Setup2.png "Nvim Setup")
 
