@@ -72,6 +72,9 @@ sdk install java
    `sdk version `<br />
    `java -version`<br />
 
+#### ScreenShot of zsh setup
+![alt text](https://raw.githubusercontent.com/abfarah/dotfiles/master/Zsh_Screenshot.png "Zsh Setup")
+
 # Vim configuration 
 I moved over to NeoVim as my primary editor.
 My vim config uses Plug to manage plugins
@@ -93,6 +96,9 @@ To install on mac using [homebrew](https://brew.sh/) <br />
    run vim command `:call coc#util#install()`
 3. Close and reopen vim.
 
+#### Screenshot of vim setup
+![alt text](https://raw.githubusercontent.com/abfarah/dotfiles/master/Vim_Setup.png "Vim Setup")
+
 # NeoVim configuration 
 My primary editor. Previously used Vim.
 
@@ -108,4 +114,8 @@ To install on mac using [homebrew](https://brew.sh/) <br />
 1. Use mason package manager to install LSP's.<br />
    `:Mason`<br />
 3. Keyboard shortcuts `<leader>km`
+
+#### Screenshots of nvim setup
+![alt text](https://raw.githubusercontent.com/abfarah/dotfiles/master/Nvim_Setup1 "Nvim Setup")
+![alt text](https://raw.githubusercontent.com/abfarah/dotfiles/master/Nvim_Setup2 "Nvim Setup")
 
