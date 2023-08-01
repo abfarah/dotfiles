@@ -62,7 +62,7 @@ My zsh config files:
 3. `nvm install node`
 
 ### Install Java using SDKMan
-1. Install SDKMan
+1. Install SDKMan & Java
 ```
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
