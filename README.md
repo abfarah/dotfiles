@@ -46,10 +46,6 @@ My zsh config files:
 2. Reload zshrc file<br />
    `source ~/.zshrc`<br />
 
-### Configure NVM
-1. `mkdir ~/.nvm`
-2. Uncomment nvm export in `~/.local.zsh`
-
 ### Configure powerlevel10k Theme
 1. `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k`
 2. `P10k configure`
@@ -59,6 +55,22 @@ My zsh config files:
 1. Syntax Highlighting Plugin<br />
 2. Auto Suggestion Plugin<br />
 3. Confirm both plugins are being sourced in `~/.plugins.zsh`
+
+### Configure NVM & install node
+1. `mkdir ~/.nvm`
+2. Uncomment nvm export in `~/.local.zsh`
+3. `nvm install node`
+
+### Install Java using SDKMan
+1. Install SDKMan
+```
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk install java
+```
+2. Confirm install<br />
+   `sdk version `<br />
+   `java -version`<br />
 
 # Vim configuration 
 I moved over to NeoVim as my primary editor.
