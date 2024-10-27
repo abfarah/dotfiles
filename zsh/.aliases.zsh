@@ -6,9 +6,8 @@ export EDITOR='nvim'
 
 # Bookmarks
 alias @dw='~/Downloads'
-alias @wp='~/workspaces'
+alias @w='~/workspaces'
 alias @dt='~/workspaces/dotfiles'
-alias @w="~/workspaces/workload"
 #alias @cp='~/workspaces/competativeProgramming'
 alias @af='~/workspaces/abfarah.github.io'
 alias @tmr='~/.tmux/resurrect/'
