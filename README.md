@@ -39,7 +39,7 @@ My zsh config files:
    cp zsh/.local.zsh ~/.local.zsh
    cp zsh/.aliases.zsh ~/.aliases.zsh
    cp zsh/.plugins.zsh ~/.plugins.zsh
-   cp vim/.vimrc ~/.vimrc`<br />
+   cp vim/.vimrc ~/.vimrc
    cp tmux/.tmux.conf ~/.tmux.conf
    cp -r nvim ~/.config/nvim
 ```
