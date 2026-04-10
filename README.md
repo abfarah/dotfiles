@@ -24,6 +24,15 @@ My zsh config files:
 `chsh -s [Path to zsh install]`<br />
 7. Close and reopen iterm and run `echo $0` to confirm your running zsh.
 
+### Ghostty setup
+1. Download [Ghostty]([https://www.iterm2.com/](https://ghostty.org/download))<br />
+2. Set Ghottty color schemes<br />
+`ghostty +list-themes`<br />
+`theme = [themeName]`<br />
+3. Download [Nerd Fonts - Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts)<br />
+4. Additional [font](https://github.com/Falkor/dotfiles/blob/master/fonts/SourceCodePro%2BPowerline%2BAwesome%2BRegular.ttf)<br />
+
+
 ### Iterm2 setup
 1. Download [Iterm2](https://www.iterm2.com/)<br />
 2. Download Iterm color schemes<br />
