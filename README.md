@@ -15,7 +15,7 @@ My zsh config files:
    ```
 2. Install the following packages:
    ```bash
-   brew install zsh wget vim neovim nvm macchina zsh-autosuggestions zsh-syntax-highlighting fzf tmux yarn tree gnupg
+   brew install zsh wget vim neovim nvm macchina zsh-autosuggestions zsh-syntax-highlighting fzf tmux yarn tree gnupg pinentry-mac
    ```
 
 ### Set primary shell to zsh
