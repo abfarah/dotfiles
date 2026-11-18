@@ -21,8 +21,6 @@ export TERM="screen-256color"
 #{ eval "$(ssh-agent -s)"; ssh-add -q ~/.ssh/id_rsa; ssh-add -q ~/.ssh/id_rsa_umn; } &>/dev/null
 eval "$(ssh-agent -s)"
 
-neofetch
-
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
