@@ -15,7 +15,7 @@ My zsh config files:
    ```
 2. Install the following packages:
    ```bash
-   brew install zsh wget vim neovim nvm macchina zsh-autosuggestions zsh-syntax-highlighting fzf tmux yarn tree gnupg pinentry-mac
+   brew install zsh wget vim neovim nvm macchina zsh-autosuggestions zsh-syntax-highlighting fzf tmux yarn tree gnupg
    ```
 
 ### Set primary shell to zsh
@@ -87,6 +87,46 @@ My zsh config files:
    ```bash
    ssh -T git@github.com
    ```
+
+### GPG commit signing setup
+`gpg` is installed with `gnupg` in the [Requirements](#requirements) step.
+1. (Optional) Install `pinentry-mac` for a native passphrase popup with Keychain support. Needed if you commit from GUI apps (VS Code, IntelliJ, GitHub Desktop):
+   ```bash
+   brew install pinentry-mac
+   mkdir -p ~/.gnupg && chmod 700 ~/.gnupg
+   echo "pinentry-program $(brew --prefix)/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
+   gpgconf --kill gpg-agent
+   ```
+   Without it, GPG asks for the passphrase in the terminal and caches it for about 10 minutes.
+2. Generate a key. Choose **ECC (sign and encrypt)** with **Curve 25519**, and use an email that is verified on your GitHub account:
+   ```bash
+   gpg --full-generate-key
+   ```
+3. Get the key ID (the part after `ed25519/` on the `sec` line):
+   ```bash
+   gpg --list-secret-keys --keyid-format=long
+   ```
+4. Copy the public key:
+   ```bash
+   gpg --armor --export <KEY_ID> | pbcopy
+   ```
+5. Add it to GitHub: **Settings → SSH and GPG keys → New GPG key**, paste, and save.
+6. Configure Git to sign commits and tags:
+   ```bash
+   git config --global user.signingkey <KEY_ID>
+   git config --global commit.gpgsign true
+   git config --global tag.gpgsign true
+   ```
+7. Make sure `~/.zshrc` contains the following (use `$TTY`, not `$(tty)`, so it works with powerlevel10k instant prompt):
+   ```zsh
+   export GPG_TTY=$TTY
+   ```
+8. Test a signed commit:
+   ```bash
+   git commit --allow-empty -m "test signed commit"
+   git log --show-signature -1
+   ```
+   Pushed commits show as **Verified** on GitHub.
 
 ### iTerm2 setup (optional, previous terminal)
 1. Install [iTerm2](https://www.iterm2.com/):
